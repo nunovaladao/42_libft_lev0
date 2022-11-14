@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static int	valor_abs(int n)
 {
@@ -60,5 +59,5 @@ char	*ft_itoa(int n)
 
 /*int main(void)
 {
-	printf("funcao: %s\n", ft_itoa(-0));
+	printf("funcao: %s\n", ft_itoa(1234));
 }*/

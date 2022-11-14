@@ -19,9 +19,9 @@ void	ft_bzero(void *s, size_t n)
 
 /*int main()
 {
-	char str[] = "Ficheiro";
+	char str[] = "test";
 
 	printf("%s\n", str);
-	ft_bzero(str, 5);
-	printf("%s\n", str);
+	ft_bzero(str, 2);
+	printf("%s\n", str + 2);
 }*/

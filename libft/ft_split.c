@@ -76,7 +76,7 @@ char	**ft_split(char const *s, char c)
 
 /*int main()
 {
-	char	s[] = "o ooo ";
+	char	s[] = "ooo oo o";
 	char	**result = ft_split(s, ' ');
 
 	int	i = 0;
