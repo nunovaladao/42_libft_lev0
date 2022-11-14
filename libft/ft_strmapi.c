@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 11:18:12 by nsoares-          #+#    #+#             */
-/*   Updated: 2022/11/10 22:44:32 by nsoares-         ###   ########.fr       */
+/*   Updated: 2022/11/14 00:30:29 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,11 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (string);
 }
 
-/*char function(unsigned int n, char c)
+/*char function(unsigned int index, char letter)
 {
-    char str;
-    
-    n = 0;
-    str = c + n;
-    return (str);
+	if (index >= 0)
+		return (ft_toupper(letter));
+	return (0);
 }
 
 int main()
