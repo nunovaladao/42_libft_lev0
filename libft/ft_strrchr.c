@@ -32,5 +32,5 @@ char	*ft_strrchr(const char *s, int c)
 	const char s[] = "http://www.tutorialspoint.com";
 	const char ch = '.';
 
-	printf("%s", strrchr(s, ch));
+	printf("%s", ft_strrchr(s, ch));
 }*/
