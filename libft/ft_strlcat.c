@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 14:21:52 by nsoares-          #+#    #+#             */
-/*   Updated: 2022/11/10 19:46:19 by nsoares-         ###   ########.fr       */
+/*   Updated: 2022/11/15 20:29:25 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 /*int main(void)
 {
-	char src[] = "nuno";
-	char dst[] = "nn";
+	char src[] = "teste";
+	char dst[] = "te";
 	
 	printf("%ld", ft_strlcat(dst, src, 2));
 }*/

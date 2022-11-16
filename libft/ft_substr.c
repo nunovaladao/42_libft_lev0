@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nsoares- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:10:20 by nsoares-          #+#    #+#             */
-/*   Updated: 2022/11/07 11:10:23 by nsoares-         ###   ########.fr       */
+/*   Updated: 2022/11/16 12:42:14 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 /*int main()
 {
-	char src[] = "substr function Implementation";
+	char src[] = "substr function implementation";
 
-    	int start = 7;
-    	int len = 5;
+    int start = 7;
+	int len = 8;
  
-    	char* dest = ft_substr(src, start, len);
- 
-    	printf("%s\n", dest);
- 
-    	return 0;
+    char* dest = ft_substr(src, start, len);
+
+    printf("%s\n", dest);
+    return 0;
 }*/

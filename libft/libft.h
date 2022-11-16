@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 10:27:45 by nsoares-          #+#    #+#             */
-/*   Updated: 2022/11/12 12:51:32 by nsoares-         ###   ########.fr       */
+/*   Updated: 2022/11/16 22:40:56 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memchr(const void *str, int c, size_t n);
 int		ft_memcmp(const void *str1, const void *str2, size_t n);
 
-void	*ft_calloc(size_t count, size_t size);
-char	*ft_strdup(const char *s1);
+void	*ft_calloc(size_t nitems, size_t size);
+char	*ft_strdup(const char *s);
 
 // Additional Functions 
 char	*ft_substr(char const *s, unsigned int start, size_t len);

@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 21:41:42 by nsoares-          #+#    #+#             */
-/*   Updated: 2022/11/10 22:31:03 by nsoares-         ###   ########.fr       */
+/*   Updated: 2022/11/16 11:14:35 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 /*int main()
 {
-    	const char *big = "Nao sei nao";
-    	const char *little = "sei";
+    	const char *big = "lorem ipsum dolor sit amet";
+    	const char *little = "dol";
     
-    	printf("%s\n", ft_strnstr(big, little, 7));
+    	printf("%s\n", ft_strnstr(big, little, 30));
 }*/

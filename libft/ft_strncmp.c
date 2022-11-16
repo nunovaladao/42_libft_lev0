@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 11:57:16 by nsoares-          #+#    #+#             */
-/*   Updated: 2022/11/10 17:17:06 by nsoares-         ###   ########.fr       */
+/*   Updated: 2022/11/15 21:34:54 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 int	main(void)
 {
 	char s1[] = "a";
-	char s2[] = "";
+	char s2[] = "a";
 	
 	printf("funcao: %d\n", ft_strncmp(s1, s2, 4));
 	printf("correcao: %d\n", strncmp(s1, s2, 4));
