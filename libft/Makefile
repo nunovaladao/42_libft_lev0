@@ -6,7 +6,7 @@
 #    By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/07 21:41:21 by nsoares-          #+#    #+#              #
-#    Updated: 2022/11/16 22:41:39 by nsoares-         ###   ########.fr        #
+#    Updated: 2022/11/17 13:14:12 by nsoares-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,14 +26,15 @@ SRC = ft_isascii.c ft_isprint.c ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 			ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
 			ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_strmapi.c ft_striteri.c
 
+
 OBJ = $(SRC:.c=.o)
 
 all:$(NAME)
 
 $(NAME): $(SRC:.c=.o)
-			ar rc $(NAME) $(SRC:.c=.o)
+			ar rc $(NAME) $(SRC:.c=.o) 
 clean:
-	$(RM)	$(SRC:.c=.o) 
+	$(RM)	$(SRC:.c=.o) libft.so
 fclean: clean
 		$(RM)	$(NAME)
 re:	fclean	$(NAME) 

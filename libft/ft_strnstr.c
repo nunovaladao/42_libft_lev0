@@ -43,4 +43,5 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
     	const char *little = "dol";
     
     	printf("%s\n", ft_strnstr(big, little, 30));
+    	printf("%s\n", strnstr(big, little, 30));
 }*/
