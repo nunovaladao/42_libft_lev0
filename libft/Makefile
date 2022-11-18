@@ -6,7 +6,7 @@
 #    By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/07 21:41:21 by nsoares-          #+#    #+#              #
-#    Updated: 2022/11/17 13:14:12 by nsoares-         ###   ########.fr        #
+#    Updated: 2022/11/18 16:23:52 by nsoares-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,19 +26,22 @@ SRC = ft_isascii.c ft_isprint.c ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 			ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
 			ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_strmapi.c ft_striteri.c
 
+BFILES = ft_lstadd_front.c ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c
 
 OBJ = $(SRC:.c=.o)
 
+BONUS = $(BFILES:.c=.o)
+
 all:$(NAME)
 
-$(NAME): $(SRC:.c=.o)
-			ar rc $(NAME) $(SRC:.c=.o) 
+$(NAME): $(OBJ) $(BONUS)
+			ar rcs $(NAME) $(OBJ) $(BONUS)
 clean:
-	$(RM)	$(SRC:.c=.o) libft.so
+	$(RM)	$(SRC:.c=.o) $(BFILES:.c=.o) libft.so
 fclean: clean
 		$(RM)	$(NAME)
 re:	fclean	$(NAME) 
 
 so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
-	gcc -nostartfiles -shared -o libft.so $(OBJ)
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC) $(BONUS)
+	gcc -nostartfiles -shared -o libft.so $(OBJ) $(BONUS)

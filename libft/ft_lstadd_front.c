@@ -1,42 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/17 13:30:22 by nsoares-          #+#    #+#             */
-/*   Updated: 2022/11/18 10:51:48 by nsoares-         ###   ########.fr       */
+/*   Created: 2022/11/18 12:56:24 by nsoares-          #+#    #+#             */
+/*   Updated: 2022/11/18 16:05:50 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	t_list	*new;
-
-	new = malloc(sizeof(t_list));
-	if (!new)
-		return (NULL);
-	if (new)
-	{
-		new ->content = content;
-		new ->next = NULL;
-	}
-	return (new);
+	new->next = *lst;
+	*lst = new;
 }
 
 /*int main()
 {
-    t_list *node;
-    int a = 3;
+	t_list *head;
+	if(!(head = malloc(sizeof(t_list))))
+		return 0;
 
-    node = ft_lstnew((void *)&a);
-    while(node)
-    {
-        printf("%d", *(int*)node ->content);
-        node = node ->next;
-    }
-    free(node);
+	head->content = (char *)"olah";
+	head->next = NULL;
+
+	t_list *new;
+	if(!(new = malloc(sizeof(t_list))))
+		return 0;
+
+	new->content = (char *)"adeus";
+	new->next = NULL;
+
+	printf("\nHead -> %s\n", (char *)head->content);
+
+	ft_lstadd_front(&head, new);
+
+	printf("Head -> %s\n", (char *)head->content);
 }*/
