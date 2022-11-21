@@ -37,7 +37,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 
-/*int main()
+/*#include <bsd/string.h>
+int main()
 {
     	const char *big = "lorem ipsum dolor sit amet";
     	const char *little = "dol";

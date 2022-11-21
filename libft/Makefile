@@ -38,7 +38,7 @@ all:$(NAME)
 $(NAME): $(OBJ) $(BONUS)
 			ar rcs $(NAME) $(OBJ) $(BONUS)
 clean:
-	$(RM)	$(SRC:.c=.o) $(BFILES:.c=.o) libft.so
+	$(RM)	$(SRC:.c=.o) $(BFILES:.c=.o) libft.so a.out
 fclean: clean
 		$(RM)	$(NAME)
 re:	fclean	$(NAME) 

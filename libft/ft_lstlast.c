@@ -22,7 +22,8 @@ t_list	*ft_lstlast(t_list *lst)
 }
 
 /*int main()
-{t_list *head;
+{
+	t_list *head;
 	t_list *dois;
 	t_list *tres;
 	t_list *quatro;

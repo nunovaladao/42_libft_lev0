@@ -34,9 +34,9 @@ int		main()
 	t_list *quatro;
 
 	char *c1 = ft_strdup("Um --");
-    char *c2 = ft_strdup("Dois --");
-    char *c3 = ft_strdup("Tres --");
-    char *c4 = ft_strdup("Quatro --");
+    	char *c2 = ft_strdup("Dois --");
+    	char *c3 = ft_strdup("Tres --");
+    	char *c4 = ft_strdup("Quatro --");
 
 	head = ft_lstnew(c1);
 	dois = ft_lstnew(c2);
@@ -47,11 +47,12 @@ int		main()
 	ft_lstadd_back(&head, tres);
 	ft_lstadd_back(&head, quatro);
 
-	printf("\n%s	    %s	%s	    %s\n", (char *)head->content, (char *)head->next->content,
-										(char *)head->next->next->content,
-										(char *)head->next->next->next->content);
-	printf("%p %p %p %p %p\n", head, head->next, head->next->next, head->next->next->next,
-										head->next->next->next->next);
+	printf("\n%s	    %s	%s	    %s\n", (char *)head->content,\
+	(char *)head->next->content,(char *)head->next->next->content,\
+	(char *)head->next->next->next->content);
+	
+	printf("%p %p %p %p %p\n", head, head->next, head->next->next,\
+	head->next->next->next, head->next->next->next->next);
 
 	ft_lstdelone(head, del);
 
