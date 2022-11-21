@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 21:41:42 by nsoares-          #+#    #+#             */
-/*   Updated: 2022/11/16 11:14:35 by nsoares-         ###   ########.fr       */
+/*   Updated: 2022/11/21 17:00:18 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		return ((char *)big);
 	while (big[b] != '\0' && b < len)
 	{
+		l = 0;
 		while (big[b + l] == little[l] && big[b + l] != '\0' \
 				&& (b + l) < len && little[l] != '\0')
 		{
@@ -37,12 +38,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 
-/*#include <bsd/string.h>
+/*#include <string.h>
 int main()
 {
     	const char *big = "lorem ipsum dolor sit amet";
-    	const char *little = "dol";
+    	const char *little = "ipsumm";
     
     	printf("%s\n", ft_strnstr(big, little, 30));
-    	printf("%s\n", strnstr(big, little, 30));
+    	//printf("%s\n", strnstr(big, little, 30));
 }*/
