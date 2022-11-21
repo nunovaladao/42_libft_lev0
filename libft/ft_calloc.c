@@ -6,20 +6,20 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/06 16:13:34 by nsoares-          #+#    #+#             */
-/*   Updated: 2022/11/06 17:11:26 by nsoares-         ###   ########.fr       */
+/*   Updated: 2022/11/21 15:38:04 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nitems, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 
-	ptr = malloc(nitems * size);
+	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 		return (NULL);
-	ft_memset(ptr, 0, size * nitems);
+	ft_memset(ptr, 0, size * nmemb);
 	return (ptr);
 }
 
