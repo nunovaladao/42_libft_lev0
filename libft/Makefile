@@ -31,18 +31,17 @@ BFILES = ft_lstadd_front.c ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.
 
 OBJ = $(SRC:.c=.o)
 
-BONUS = $(BFILES:.c=.o)
+BONUS_OBJ = $(BFILES:.c=.o)
 
 all:$(NAME)
 
-$(NAME): $(OBJ) $(BONUS)
-			ar rcs $(NAME) $(OBJ) $(BONUS)
+$(NAME): $(OBJ)
+			ar rcs $(NAME) $(OBJ)
 clean:
-	$(RM)	$(SRC:.c=.o) $(BFILES:.c=.o) libft.so a.out
+	$(RM)	$(SRC:.c=.o) $(BFILES:.c=.o)
 fclean: clean
 		$(RM)	$(NAME)
-re:	fclean	$(NAME) 
+re:	fclean	$(NAME)
 
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC) $(BONUS)
-	gcc -nostartfiles -shared -o libft.so $(OBJ) $(BONUS)
+bonus: $(OBJ) $(BONUS_OBJ)
+		ar rcs $(NAME) $(OBJ) $(BONUS_OBJ)

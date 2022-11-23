@@ -26,20 +26,17 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 }
 
-/*void function(unsigned int n, char *s)
+/*void function(unsigned int i, char *c)
 {
-    char c = 'a';
-    char temp = 'c';
-    
-    n = 0;
-    temp = *s;
-    *s = c;
-    c = temp;
+	i = 0;
+	
+	if (*c >= 'A' && *c <= 'Z')
+		*c = *c + 32;
 }
 
 int main()
 {
-	char s[] = "test\n";
+	char s[] = "TEst";
 	ft_striteri(s, function);
 	printf("%s", s);
 }*/

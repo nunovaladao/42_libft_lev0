@@ -31,11 +31,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char src[] = "substr function implementation";
 
-    int start = 7;
+    	int start = 7;
 	int len = 8;
  
-    char* dest = ft_substr(src, start, len);
+    	char* dest = ft_substr(src, start, len);
 
-    printf("%s\n", dest);
-    return 0;
+    	printf("%s\n", dest);
+    	return 0;
 }*/

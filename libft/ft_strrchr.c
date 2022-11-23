@@ -14,23 +14,28 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	const char	*a;
-	int			i;
+	char	*temp;
+	char	*dest;
+	int		i;
 
-	a = s;
-	i = ft_strlen(s);
-	s = (s + i);
-	while (*s != *a && c != *s)
-		s--;
-	if (c == *s)
-		return ((char *)s);
-	return (0);
+	i = 0;
+	temp = (char *)s;
+	dest = NULL;
+	while (temp[i])
+	{
+		if (temp[i] == c)
+			dest = &temp[i];
+		i++;
+	}
+	if (temp[i] == c)
+		return (&temp[i]);
+	return (dest);
 }
 
 /*int	main(void)
 {
-	const char s[] = "http://www.tutorialspoint.com";
-	const char ch = '.';
+	const char s[] = "teste";
+	const char c = 'e';
 
-	printf("%s", ft_strrchr(s, ch));
+	printf("%s", ft_strrchr(s, c));
 }*/

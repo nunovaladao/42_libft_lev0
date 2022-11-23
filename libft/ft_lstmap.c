@@ -58,7 +58,7 @@ int		main()
 
 	char *c1 = ft_strdup("-- Adeus Um --");
 	char *c2 = ft_strdup("-- Adeus Dois --");
-	char *c3 = ft_strdup("-- Adeus Tres --");
+	char *c3 = ft_strdup("-- Adeus Tres --");ahh ---- Asd ---- Dswh ---- W
 	char *c4 = ft_strdup("-- Adeus Quatro --");
 
 	head = ft_lstnew(c1);
