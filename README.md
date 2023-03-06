@@ -31,7 +31,7 @@ It will contain a lot of general purpose functions your programs will rely upon.
 ```bash
   cc -Wall -Wextra -Werror function_name.c libft.a  
 ```
-##
+
 #### Makefile Rules
 
 `make` or `make all` - Compile the **mandatory part** and create **libft.a** ([**Subject LIBFT**](https://github.com/nunovaladao/42_libft_lev0/blob/main/extras/en.subject.pdf))
