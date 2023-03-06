@@ -1,3 +1,4 @@
+
 ## LIBFT 📚
 
 This project is about coding a C library.
@@ -14,20 +15,20 @@ It will contain a lot of general purpose functions your programs will rely upon.
 ## RUN THE PROJECT:
 
 #### 1 - Clone this repository
-```http
+```bash
   git clone https://github.com/nunovaladao/42_libft_lev0.git
 ```
 
 #### 2 - Enter in the project folder and run `make` 
 
-```http
+```bash
   cd 42_libft_lev0/libft
   make 
 ```
 
 #### 3 - Compile your functions with `libft.a`  
 
-```http
+```bash
   cc -Wall -Wextra -Werror function_name.c libft.a  
 ```
 
@@ -48,3 +49,11 @@ It will contain a lot of general purpose functions your programs will rely upon.
 [**Coding Norm**](https://github.com/nunovaladao/42_libft_lev0/blob/main/extras/en_norm.pdf) - All students must follow the 42 code writing standards. This standard is applied to many projects in the course.
 ##
 Nuno Valadão | nsoares-@student.42porto.com 
+
+
+
+
+
+    
+
+
