@@ -44,6 +44,11 @@ It will contain a lot of general purpose functions your programs will rely upon.
 
 `make re` - Remove every object file and compile again (reconstruction)
 
+## Tests
+You can use these tests in your code:
+- [libft-unit-tests](https://github.com/alelievr/libft-unit-test)
+- [libft-war-machine](https://github.com/0x050f/libft-war-machine)
+
 ## Note:
 
 [**Coding Norm**](https://github.com/nunovaladao/42_libft_lev0/blob/main/extras/en_norm.pdf) - All students must follow the 42 code writing standards. This standard is applied to many projects in the course.
